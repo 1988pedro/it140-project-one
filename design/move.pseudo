@@ -1,25 +1,25 @@
-# Project One Move-Between-Rooms Pseudocode
-#
-# Graded checkpoint: Module Five Project One
-# Later use: conceptual support for M6; movement design for M7
-#
-# Review the course-provided movement flowchart before completing this file.
-# Write pseudocode, not Python code. Use clear indentation and course-appropriate
-# keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
+// Move Pseudocode for Archaeological Tomb Exploration
 
-# TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
-
-# TODO 2: Prompt for and receive the player's movement command.
-
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
-
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
-
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
-
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+WHILE game_is_running == TRUE
+    PRINT "You are currently in: " + current_room
+    PRINT "Where would you like to go? (Enter north, south, east, west, or exit)"
+    INPUT player_move
+    
+    IF player_move == "exit"
+        PRINT "Thanks for playing!"
+        SET game_is_running = FALSE
+        
+    ELSE IF player_move IS A VALID DIRECTION FOR current_room
+        SET current_room = new_room_based_on_direction
+        PRINT "You move successfully into the " + current_room
+        
+        // Check if player enters the Villain's room prematurely
+        IF current_room == "Guardian's Sanctum" AND player_inventory.length < 6
+            PRINT "The High Priest Mummy awakens and blocks your path! You were caught before collecting all the relics. Game Over!"
+            SET game_is_running = FALSE
+        END IF
+        
+    ELSE
+        PRINT "You cannot go that way! Try a different direction."
+    END IF
+END WHILE
