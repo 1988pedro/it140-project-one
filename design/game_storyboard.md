@@ -1,67 +1,26 @@
-# Project One Storyboard | Text-Based Adventure Game
-
-> Complete the `TODO:` prompts using your own game idea. This file is a graded
-> Project One deliverable and later becomes a reference for Project Two.
+# Project One: Game Storyboard
 
 ## Theme and Storyline
+* **Theme**: Cursed Archaeological Tomb Exploration
+* **Basic Storyline**: The player is an adventurous archaeologist who has ventured deep into a newly discovered, ancient subterranean tomb in search of lost artifacts. However, a restless ancient guardian haunts the chambers. To win the game, the player must successfully explore the tomb, collect all six sacred relics, and escape to safety without running into the tomb's guardian before their collection is complete.
 
-**Theme:**
+## Rooms (Minimum of 8 Rooms)
+1. **Start Chamber**: The damp, secure starting cavern where the expedition begins (contains no items and no villain).
+2. **Crypt Entrance**: The dusty stone gateway leading deeper into the ruins.
+3. **Vault of Echoes**: A sprawling, cavernous hall echoing with ancient whispers.
+4. **Scroll Room**: An old archive filled with crumbling papyrus and stone tablets.
+5. **Sunken Hallway**: A narrow, waterlogged corridor connecting the main chambers.
+6. **Alchemical Laboratory**: An abandoned room littered with broken potion flasks and strange apparatuses.
+7. **Treasury Annex**: A secure storage vault designed to protect valuable antiquities.
+8. **Guardian's Sanctum**: The inner shrine where the ancient protector dwells (contains the villain and no items).
 
-TODO: Name and briefly describe your game's theme.
-
-**Storyline:**
-
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
-
-## Rooms
-
-Project One requires a minimum of eight rooms.
-
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
-
-Add more rooms if your design needs them.
-
-## Items
-
-With the minimum eight-room design, Project One requires at least six items.
-Every room except the start room and villain room must contain one item.
-
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
-
-If you add rooms beyond the minimum, add an item for every additional room
-except the start room and villain room.
+## Items (Minimum of 6 Items)
+1. **Golden Ankh**: Found in the *Crypt Entrance*.
+2. **Sapphire Amulet**: Found in the *Vault of Echoes*.
+3. **Relic Scroll**: Found in the *Scroll Room*.
+4. **Obsidian Dagger**: Found in the *Sunken Hallway*.
+5. **Ceremonial Chalice**: Found in the *Alchemical Laboratory*.
+6. **Royal Scepter**: Found in the *Treasury Annex*.
 
 ## Villain
-
-TODO: Identify and briefly describe the villain.
-
-## Storyboard and Map Check
-
-Before submitting, compare this storyboard with `game_map.drawio`.
-
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
-* [ ] Room, item, and villain names match my map.
-* [ ] The map allows the player to collect all required items before the
-  villain is encountered.
-
-## Project Two Handoff
-
-Keep this file after Project One. In Module Seven, use these names and design
-choices when building the final room/item dictionary and player-facing output.
+* **High Priest Mummy**: Stationed in the *Guardian's Sanctum*. If the player enters this room before collecting all six items, they encounter the villain and lose the game.
